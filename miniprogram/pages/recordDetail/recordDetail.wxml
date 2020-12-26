@@ -1,0 +1,22 @@
+<view class="body">
+	<view class="img">
+		<image mode="widthFix" wx:if="{{dataList.use_state}}" src="./images/is_use.png"></image>
+		<image mode="widthFix" wx:else src="./images/not_use.png"></image>
+	</view>
+	<view class="success">
+		<view style="margin-bottom:60rpx" class="info">
+			状态：<view class="is_use" wx:if="{{dataList.use_state}}">已使用</view>
+			<view class="not_use" wx:else>未使用</view>
+		</view>
+		<view class="info">申请教室：{{dataList.room_num}}教室</view>
+		<view class="info">申请时间：{{dataList.date}} 星期{{dataList.weekDay}} {{dataList.start_time}}-{{dataList.end_time}}
+		</view>
+		<view class="info" wx:for="{{dataList.boxList}}" wx:key="index">{{item.title}}：{{item.value}}</view>
+		<view style="margin-top:80rpx" class="info">申请提交时间：{{dataList.submit_time.date}}
+			星期{{dataList.submit_time.weekDay}}
+			{{dataList.submit_time.hour}}:{{dataList.submit_time.minute}}:{{dataList.submit_time.second}}</view>
+	</view>
+	<view bindtap="back" class="button" hover-class="button_hover" hover-stay-time="100" wx:if="{{dataList.use_state}}">
+		返回</view>
+	<view bindtap="changeState" class="button" hover-class="button_hover" hover-stay-time="100" wx:else>我已使用教室</view>
+</view>

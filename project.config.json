@@ -1,0 +1,153 @@
+{
+    "miniprogramRoot": "miniprogram/",
+    "cloudfunctionRoot": "cloudfunctions/",
+    "setting": {
+        "urlCheck": true,
+        "es6": true,
+        "enhance": true,
+        "postcss": true,
+        "preloadBackgroundData": false,
+        "minified": true,
+        "newFeature": true,
+        "coverView": true,
+        "nodeModules": false,
+        "autoAudits": false,
+        "showShadowRootInWxmlPanel": true,
+        "scopeDataCheck": false,
+        "uglifyFileName": false,
+        "checkInvalidKey": true,
+        "checkSiteMap": false,
+        "uploadWithSourceMap": true,
+        "compileHotReLoad": false,
+        "useMultiFrameRuntime": false,
+        "useApiHook": true,
+        "babelSetting": {
+            "ignore": [],
+            "disablePlugins": [],
+            "outputPath": ""
+        },
+        "enableEngineNative": false,
+        "useIsolateContext": true,
+        "useCompilerModule": true,
+        "userConfirmedUseCompilerModuleSwitch": false,
+        "packNpmManually": false,
+        "packNpmRelationList": [],
+        "minifyWXSS": true
+    },
+    "appid": "wx54fe3fac1a12d3ed",
+    "projectname": "XJTUSE%E4%BA%8B%E5%8A%A1%E5%A4%A7%E5%8E%85",
+    "libVersion": "2.14.0",
+    "simulatorType": "wechat",
+    "simulatorPluginLibVersion": {},
+    "condition": {
+        "plugin": {
+            "list": []
+        },
+        "game": {
+            "list": []
+        },
+        "gamePlugin": {
+            "list": []
+        },
+        "miniprogram": {
+            "list": [
+                {
+                    "id": -1,
+                    "name": "db guide",
+                    "pathName": "pages/databaseGuide/databaseGuide",
+                    "query": ""
+                },
+                {
+                    "name": "pages/index/index",
+                    "pathName": "pages/index/index",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/applyRoom/applyRoom",
+                    "pathName": "pages/applyRoom/applyRoom",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/submitApply/submitApply",
+                    "pathName": "pages/submitApply/submitApply",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/submitApply1/submitApply1",
+                    "pathName": "pages/submitApply1/submitApply1",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/applyResult/applyResult",
+                    "pathName": "pages/applyResult/applyResult",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/applyRecord/applyRecord",
+                    "pathName": "pages/applyRecord/applyRecord",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/recordDetail/recordDetail",
+                    "pathName": "pages/recordDetail/recordDetail",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/registerAward/registerAward",
+                    "pathName": "pages/registerAward/registerAward",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/award/award",
+                    "pathName": "pages/award/award",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/queryStudent/queryStudent",
+                    "pathName": "pages/queryStudent/queryStudent",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/showStudent/showStudent",
+                    "pathName": "pages/showStudent/showStudent",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/news/news",
+                    "pathName": "pages/news/news",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/userInfo/userInfo",
+                    "pathName": "pages/userInfo/userInfo",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/commonQ&A/commonQ&A",
+                    "pathName": "pages/commonQ&A/commonQ&A",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/about/about",
+                    "pathName": "pages/about/about",
+                    "query": "",
+                    "scene": null
+                }
+            ]
+        }
+    }
+}

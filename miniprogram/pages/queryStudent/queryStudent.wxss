@@ -1,0 +1,37 @@
+page {
+	background-color: rgb(240, 242, 249);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.box {
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 20rpx;
+	box-shadow: 5rpx 5rpx 10rpx 1rpx #cccccc;
+	margin: 50rpx;
+}
+
+.selected_student {
+	font-size: 28rpx;
+	margin: 40rpx;
+}
+
+.selected_picker {
+	height: 50px;
+}
+
+.button {
+	justify-content: center;
+	margin-top: 30rpx;
+	border-radius: 40rpx;
+	background-color: rgb(50, 141, 235);
+	color: white;
+}
+
+.button_hover {
+	background-color: rgb(26, 96, 167);
+}

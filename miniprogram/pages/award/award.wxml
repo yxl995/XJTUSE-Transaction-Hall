@@ -1,0 +1,34 @@
+<view class="body">
+	<view wx:if="{{recordList.length==0}}">暂无记录</view>
+	<view class="box" wx:for="{{recordList}}" wx:key="index">
+		<view class="base">
+			<view id="{{index}}" bindtap="showImg" class="img">
+				<image src="{{item.imgIDList[0]}}"></image>
+				<view class="red">{{item.imgIDList.length}}</view>
+				<view class="shadow" hover-class="shadow_hover" hover-stay-time="100"></view>
+			</view>
+			<view class="info">
+				<view class="row">奖项：{{item.boxList[0].value}}</view>
+				<view class="row">获奖日期：{{item.date}}</view>
+				<view class="bottom">
+					<view style="display:flex" wx:if="{{item.state}}">状态：<view class="isUse">已通过</view>
+					</view>
+					<view style="display:flex" wx:else>状态：<view class="notUse">未通过
+						</view>
+					</view>
+					<view wx:if="{{!detail[index]}}" id="{{index}}" hover-class="detail_hover" hover-stay-time="100"
+						bindtap="detailRecord" class="detail">▼</view>
+				</view>
+			</view>
+		</view>
+		<view wx:if="{{detail[index]}}" class="more">
+			<view class="row">颁发单位：{{item.boxList[1].value}}</view>
+			<view class="row">奖项描述：<view style="width:70%">{{item.boxList[3].value}}</view>
+			</view>
+			<view style="display:flex;justify-content:flex-end">
+				<view id="{{index}}" hover-class="detail_hover" hover-stay-time="100" bindtap="detailRecord"
+					class="detail" style="width:14%">▲</view>
+			</view>
+		</view>
+	</view>
+</view>

@@ -1,0 +1,11 @@
+<view class="userimage" bindtap="showImg">
+  <image style="width:100%;border-radius:100rpx" mode="widthFix" src="{{dataList.head}}"></image>
+  <view class="shadow" hover-class="shadow_hover" hover-stay-time="100"></view>
+</view>
+<view class="outside">
+  <view wx:for="{{row}}" wx:key="index" class="inside">
+    {{item.title}}
+    <view class="info" wx:if="{{item.title=='班级'}}">软件{{dataList[item.info]}}</view>
+    <view class="info" wx:else>{{dataList[item.info]}}</view>
+  </view>
+</view>

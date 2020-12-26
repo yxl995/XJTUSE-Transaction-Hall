@@ -1,0 +1,56 @@
+.body {
+	width: 100vw;
+	height: 100vh;
+	background-color: rgb(240, 242, 249);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.img {
+	width: 30%;
+	margin-top: 80rpx;
+	margin-bottom: 50rpx;
+}
+
+image {
+	width: 100%;
+}
+
+.title {
+	font-size: 50rpx;
+	font-weight: 400;
+}
+
+.fail {
+	font-size: 40rpx;
+	margin: 40rpx 0;
+}
+
+.button {
+	justify-content: center;
+	margin-top: 100rpx;
+	border-radius: 40rpx;
+	background-color: rgb(50, 141, 235);
+	color: white;
+}
+
+.button_hover {
+	background-color: rgb(26, 96, 167);
+}
+
+.success {
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	margin-top: 40rpx;
+}
+
+.info {
+	width: 100%;
+	margin: 5rpx 0;
+	font-size: 28rpx;
+	white-space: pre-wrap;
+}

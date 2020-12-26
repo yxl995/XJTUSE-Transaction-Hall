@@ -1,0 +1,23 @@
+<view class="body">
+	<form bindsubmit="checkSubmit">
+		<view class="input" wx:for="{{boxList}}" wx:key="index">
+			<view style="font-size:34rpx">{{item.title}}</view>
+			<input class="{{input}}" type="{{item.type}}" name="{{item.name}}" value=""
+				placeholder="{{item.placeholder}}"></input>
+		</view>
+		<button form-type="submit" class="button1" hover-class="button_hover1" hover-stay-time="100">提交</button>
+	</form>
+	<view bindtap="hideCheck" class="{{isShadow}}"></view>
+	<view class="{{check}}">
+		<view style="font-size:40rpx;font-weight:bold">申请信息确认</view>
+		<view style="width:90%">
+			<view class="info">申请教室：{{room_num}}教室</view>
+			<view class="info">申请时间：{{date}} 星期{{weekDay}} {{start_time}}-{{end_time}}</view>
+			<view class="info" wx:for="{{boxList}}" wx:key="index">{{item.title}}：{{item.value}}</view>
+		</view>
+		<button style="margin-top: 40rpx" bindtap="submit" class="button1" hover-class="button_hover1"
+			hover-stay-time="100">确认</button>
+		<button style="margin-top: 40rpx" bindtap="hideCheck" class="button2" hover-class="button_hover2"
+			hover-stay-time="100">取消</button>
+	</view>
+</view>

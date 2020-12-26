@@ -1,0 +1,80 @@
+.body {
+	width: 100vw;
+	height: 100vh;
+	background-color: rgb(240, 242, 249);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.logo {
+	width: 65%;
+	display: flex;
+	justify-content: center;
+	margin-top: 110rpx;
+	margin-bottom: 60rpx;
+}
+
+.form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.input,
+.button {
+	width: 60% !important;
+	height: 80rpx;
+	display: flex;
+	align-items: center;
+	border-radius: 80rpx;
+	padding: 0 20rpx;
+	margin: 20rpx 0;
+	font-size: 32rpx;
+	box-sizing: border-box;
+}
+
+.input {
+	background-color: white;
+}
+
+.button {
+	background-color: rgb(50, 141, 235);
+	justify-content: center;
+	color: white;
+}
+
+.button_hover {
+	background-color: rgb(26, 96, 167);
+}
+
+.info::before {
+	content: "——	";
+}
+
+.info::after {
+	content: "	——";
+}
+
+.info {
+	color: rgb(155, 155, 155);
+	font-size: 28rpx;
+	margin: 40rpx;
+	font-weight: 500;
+}
+
+.bottom {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 350rpx;
+	display: flex;
+}
+
+.bottom image {
+	width: 100%;
+	height: 100%;
+}

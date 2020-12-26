@@ -1,0 +1,17 @@
+<view class="body">
+	<view wx:if="{{recordList.length==0}}">暂无记录</view>
+	<view bindtap="detailRecord" hover-class="box_hover" hover-stay-time="100" class="box" wx:for="{{recordList}}"
+		wx:key="index" id="{{index}}">
+		<view class="info">
+			<view class="time">{{item.date}} {{item.start_time}}-{{item.end_time}}</view>
+			<view class="bottom">
+				<view>{{item.room_num}}教室</view>
+				<view style="display:flex" wx:if="{{item.use_state}}">状态：<view class="isUse">已使用</view>
+				</view>
+				<view style="display:flex" wx:else>状态：<view class="notUse">未使用</view>
+				</view>
+			</view>
+		</view>
+		<view class="arrow">▼</view>
+	</view>
+</view>

@@ -1,0 +1,52 @@
+<view class="body">
+	<view class="pubTitle">  个人信息</view>
+	<view class="box">
+		<view class="top_box">
+			<view bindtap="showHead" class="head">
+				<image src="{{userinfo.head}}"></image>
+				<view class="shadow" hover-class="shadow_hover" hover-stay-time="100"></view>
+			</view>
+			<view class="right">
+				<view class="info">姓名：{{userinfo.name}}</view>
+				<view class="info">班级：软件{{userinfo.class}}</view>
+				<view class="info">学号：{{userinfo.id}}</view>
+				<view class="info">性别：{{userinfo.gender}}</view>
+			</view>
+		</view>
+		<view class="info">邮箱：{{userinfo.Email}}</view>
+		<view class="info">手机号：{{userinfo.phone}}</view>
+		<view class="info" style="margin-bottom:30rpx">GitHub：{{userinfo.github}}</view>
+	</view>
+	<view class="pubTitle">  获奖信息</view>
+	<view class="info_box" wx:for="{{recordList}}" wx:key="index">
+		<view class="base">
+			<view id="{{index}}" bindtap="showImg" class="img">
+				<image src="{{item.imgIDList[0]}}"></image>
+				<view class="red">{{item.imgIDList.length}}</view>
+				<view class="shadow" hover-class="shadow_hover" hover-stay-time="100"></view>
+			</view>
+			<view class="info">
+				<view class="row">奖项：{{item.boxList[0].value}}</view>
+				<view class="row">获奖日期：{{item.date}}</view>
+				<view class="bottom">
+					<view style="display:flex" wx:if="{{item.state}}">状态：<view class="isUse">已通过</view>
+					</view>
+					<view style="display:flex" wx:else>状态：<view class="notUse">审核中
+						</view>
+					</view>
+					<view wx:if="{{!detail[index]}}" id="{{index}}" hover-class="detail_hover" hover-stay-time="100"
+						bindtap="detailRecord" class="detail">▼</view>
+				</view>
+			</view>
+		</view>
+		<view wx:if="{{detail[index]}}" class="more">
+			<view class="row">颁发单位：{{item.boxList[1].value}}</view>
+			<view class="row">奖项描述：<view style="width:70%">{{item.boxList[3].value}}</view>
+			</view>
+			<view style="display:flex;justify-content:flex-end">
+				<view id="{{index}}" hover-class="detail_hover" hover-stay-time="100" bindtap="detailRecord"
+					class="detail" style="width:14%">▲</view>
+			</view>
+		</view>
+	</view>
+</view>

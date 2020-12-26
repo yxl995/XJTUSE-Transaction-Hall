@@ -1,0 +1,108 @@
+page {
+  background-color: rgb(240, 242, 249);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.img {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  margin: 50rpx;
+}
+
+.box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30rpx;
+}
+
+.question {
+  width: 90%;
+  border-radius: 15rpx;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: 5rpx 5rpx 10rpx 1rpx #cccccc;
+  padding: 30rpx 20rpx;
+  margin: 20rpx;
+}
+
+.text {
+  margin-left: 30rpx;
+}
+
+.arrow {
+  width: 2%;
+  display: flex;
+  align-items: center;
+}
+
+.mask {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+}
+
+.answerbox {
+  width: 85%;
+  position: absolute;
+  border-radius: 15rpx;
+  background-color: white;
+  box-shadow: 5rpx 5rpx 10rpx 1rpx #cccccc;
+  top: 80rpx;
+}
+
+.tip_area {
+  width: 100%;
+}
+
+.tip_box {
+  width: 100%;
+  height: 900rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 40rpx;
+}
+
+.tip_title {
+  font-size: 38rpx;
+  margin-top: 80rpx;
+  display: flex;
+  justify-content: center;
+}
+
+.tip_text {
+  width: 100%;
+  flex-wrap: wrap;
+  font-size: 30rpx;
+  white-space: pre-wrap;
+  margin: 50rpx 0;
+}
+
+.close {
+  position: absolute;
+  top: 20rpx;
+  right: 40rpx;
+  font-size: 46rpx;
+  color: rgb(174, 174, 174);
+}
+
+.close_hover {
+  color: black;
+}
+
+.question_hover {
+  box-shadow: 0rpx 0rpx 1rpx 1rpx #cccccc;
+}

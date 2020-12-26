@@ -1,0 +1,20 @@
+<view class="body">
+	<view class="logo">
+		<image mode="widthFix" src="./images/xjtu_logo.png"></image>
+	</view>
+	<form style="width: 100%;" bindsubmit="submit">
+		<view class="form">
+			<view class="input">
+				<input name="username" type="text" placeholder="请输入NetID/工号" />
+			</view>
+			<view class="input">
+				<input name="password" type="password" placeholder="请输入密码" />
+			</view>
+			<button form-type="submit" class="button" hover-class="button_hover" hover-stay-time="100">登录</button>
+		</view>
+	</form>
+	<view class="info">软件学院事务管理系统</view>
+	<view class="bottom">
+		<image src="./images/bottom.png" mode="widthFix"></image>
+	</view>
+</view>

@@ -1,0 +1,162 @@
+.body {
+	width: 100vw;
+	background-color: rgb(240, 242, 249);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+form {
+	width: 90%;
+	padding: 25rpx 0;
+}
+
+.input {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 90rpx;
+	background-color: white;
+	line-height: 90rpx;
+	box-sizing: border-box;
+	padding: 0 40rpx;
+	border-radius: 45rpx;
+	box-shadow: 5rpx 5rpx 10rpx 1rpx #cccccc;
+	margin: 50rpx 0;
+}
+
+input {
+	width: 70%;
+}
+
+.button {
+	justify-content: center;
+	margin-top: 100rpx;
+	border-radius: 40rpx;
+	background-color: rgb(50, 141, 235);
+	color: white;
+}
+
+.button_hover {
+	background-color: rgb(26, 96, 167);
+}
+
+picker {
+	width: 75%;
+	margin: 50rpx 0;
+}
+
+.picker {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: 90rpx;
+	background-color: white;
+	line-height: 90rpx;
+	box-sizing: border-box;
+	padding: 0 20rpx;
+	border-radius: 45rpx;
+}
+
+.text_input {
+	width: 100%;
+	height: 378rpx;
+	background-color: white;
+	box-sizing: border-box;
+	padding: 70rpx 40rpx;
+	border-radius: 45rpx;
+	box-shadow: 5rpx 5rpx 10rpx 1rpx #cccccc;
+	margin: 50rpx 0;
+	position: relative;
+}
+
+.title {
+	font-size: 34rpx;
+	position: absolute;
+	top: 20rpx;
+}
+
+textarea {
+	position: absolute;
+}
+
+.pubTitle {
+	background-color: rgb(50, 141, 235);
+	width: 100%;
+	font-size: 40rpx;
+	padding: 15rpx 70rpx;
+	color: white;
+	white-space: pre-wrap;
+}
+
+.box {
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	box-sizing: border-box;
+	padding: 0 40rpx;
+	border-radius: 45rpx;
+	box-shadow: 5rpx 5rpx 10rpx 1rpx #cccccc;
+	margin: 50rpx 0;
+}
+
+.info {
+	font-size: 34rpx;
+	margin: 10rpx;
+}
+
+.prove {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0 40rpx;
+}
+
+.photo {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.add {
+	width: 160rpx;
+	height: 160rpx;
+	border-radius: 15rpx;
+	box-shadow: 5rpx 5rpx 10rpx 1rpx #cccccc;
+	margin: 10rpx 0;
+	background-color: white;
+	text-align: center;
+	box-sizing: border-box;
+	color: rgb(158, 154, 154);
+	font-size: 140rpx;
+	line-height: 140rpx;
+	font-weight: 600;
+}
+
+.add image {
+	width: 100%;
+	height: 100%;
+	border-radius: 15rpx;
+}
+
+.red {
+	position: absolute;
+	top: 2rpx;
+	right: 2rpx;
+	width: 40rpx;
+	height: 40rpx;
+	border-radius: 40rpx;
+	background-color: red;
+	font-size: 28rpx;
+	font-weight: 400;
+	color: white;
+	line-height: 38rpx;
+	box-shadow: 1rpx 1rpx 5rpx 1rpx black;
+}
+
+.picker_hover {
+	box-shadow: 0rpx 0rpx 10rpx 1rpx #cccccc;
+}

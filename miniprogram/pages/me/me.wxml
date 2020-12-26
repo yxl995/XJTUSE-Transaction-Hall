@@ -1,0 +1,24 @@
+<view class="container">
+  <view class="userimage" bindtap="showImg">
+    <image style="width:100%;border-radius:100rpx" mode="widthFix" src="{{userinfo.head}}"></image>
+    <view class="shadow" hover-class="shadow_hover" hover-stay-time="100"></view>
+  </view>
+  <view class="username">{{userinfo.username}}</view>
+</view>
+
+
+<view class="box">
+  <navigator wx:for="{{rowList}}" wx:key="index" url="{{item.url+JSONstr}}" style="width:100%">
+    <view class="button">
+      <view class="txt">
+        <view class="icon">
+          <image style="width:100%" src="{{item.icon}}" mode="widthFix"></image>
+        </view>
+        {{item.txt}}
+      </view>
+      <view class="arrow">
+        <image style="width:100%" src="./images/arrow.png" mode="widthFix"></image>
+      </view>
+    </view>
+  </navigator>
+</view>

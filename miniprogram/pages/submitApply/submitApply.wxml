@@ -1,0 +1,61 @@
+<view class="body">
+	<picker mode="date" value="{{date}}" start="{{start}}" end="{{end}}" bindchange="bindDateChange">
+		<view hover-class="picker_hover" hover-stay-time="100" class="picker">
+			<view>{{date}} 星期{{weekDay}}</view>
+			<view style="color:gray">▼</view>
+		</view>
+	</picker>
+	<form bindsubmit="next">
+		<view class="check_page">
+			<view class="row">
+				<view class="room">教室</view>
+				<view class="time" wx:for="{{timeList}}" wx:key="index">
+					<view style="line-height: 37rpx;">{{item.start_time}}</view>
+					<view style="line-height: 37rpx;">{{item.end_time}}</view>
+				</view>
+			</view>
+			<radio-group bindchange="radioChange">
+				<view class="row" wx:for="{{roomList}}" wx:key="index">
+					<view class="room">{{item.num}}</view>
+
+					<view class="time" wx:for="{{room_time_recordList[index]}}" wx:for-index="childIndex"
+						wx:key="childIndex">
+						<block wx:if="{{item.use}}">
+							<view class="mask {{item.className}}">123</view>
+							<radio value="{{index}}-{{childIndex}}"></radio>
+						</block>
+						<block wx:else>
+							<view class="mask none">123</view>
+						</block>
+					</view>
+				</view>
+			</radio-group>
+		</view>
+		<view class="info_page">
+			<view class="room_info">
+				<view wx:for="{{roomInfo}}" wx:key="index">{{item.name}}{{item.msg}}</view>
+			</view>
+			<view class="time_info">
+				<view>{{date}}</view>
+				<view>星期{{weekDay}}</view>
+				<view wx:if="{{selectedTime!=''}}">
+					{{timeList[selectedTime].start_time}}-{{timeList[selectedTime].end_time}}</view>
+			</view>
+			<view class="option_info">
+				<view class="option_box">
+					<view class="mask selected" style="position:relative;width:30%">123</view>
+					<view>当前选择</view>
+				</view>
+				<view class="option_box">
+					<view class="mask space" style="position:relative;width:30%">123</view>
+					<view>未被选择</view>
+				</view>
+				<view class="option_box">
+					<view class="mask none" style="position:relative;width:30%">123</view>
+					<view>无法选择</view>
+				</view>
+			</view>
+		</view>
+		<button form-type="submit" class="button" hover-class="button_hover" hover-stay-time="100">下一步</button>
+	</form>
+</view>

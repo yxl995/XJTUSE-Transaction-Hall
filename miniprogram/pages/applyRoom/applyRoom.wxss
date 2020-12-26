@@ -1,0 +1,146 @@
+page {
+	background: rgb(240, 242, 249);
+}
+
+view {
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10rpx;
+}
+
+.body {
+	width: 100%;
+	justify-content: flex-start;
+	flex-direction: column;
+	padding: 50rpx 0;
+	position: relative;
+}
+
+.box {
+	width: 90%;
+	margin: 30rpx 0;
+	padding: 30rpx 25rpx;
+	box-shadow: 5rpx 5rpx 10rpx 1rpx #cccccc;
+	background-color: white;
+}
+
+.box_hover {
+	box-shadow: 0rpx 0rpx 1rpx 1rpx #cccccc;
+}
+
+.img {
+	width: 15%;
+	flex: 1.75;
+}
+
+image {
+	width: 100%;
+	height: 100%;
+}
+
+.text {
+	flex-direction: column;
+	align-items: flex-start;
+	flex: 8;
+	margin: 0 35rpx;
+	text-align: center;
+}
+
+.chinese {
+	font-size: 38rpx;
+	line-height: 38rpx;
+	margin: 8rpx 0;
+}
+
+.english {
+	font-size: 22rpx;
+	line-height: 22rpx;
+	margin: 8rpx 0;
+}
+
+.arrow {
+	color: rgb(197, 197, 197);
+	flex: 0.25;
+}
+
+.shadow {
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(255, 255, 255, 0.7);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.hide {
+	display: none;
+}
+
+.tip_out {
+	width: 85%;
+	flex-direction: column;
+	align-items: center;
+	height: 1000rpx;
+	box-shadow: 5rpx 5rpx 10rpx 1rpx #cccccc;
+	border-radius: 10rpx;
+	position: absolute;
+	top: 60rpx;
+	background-color: white;
+}
+
+.tip_area {
+	width: 90%;
+	height: 70%;
+	border-bottom: 1rpx solid #cccccc;
+	position: absolute;
+	top: 0;
+}
+
+.tip_box {
+	width: 100%;
+	flex-direction: column;
+}
+
+.tip_title {
+	font-size: 38rpx;
+	margin: 20rpx 0;
+}
+
+.tip_text {
+	width: 100%;
+	flex-wrap: wrap;
+	font-size: 30rpx;
+	white-space: pre-wrap;
+}
+
+.check_button1,
+.check_button2 {
+	width: 80%;
+	height: 75rpx;
+	border-radius: 40rpx;
+	position: absolute;
+	bottom: 175rpx;
+	font-size: 35rpx;
+}
+
+.check_button1 {
+	background-color: rgb(62, 139, 243);
+	color: white;
+	bottom: 8;
+}
+
+.check_button2 {
+	background-color: rgb(200, 203, 209);
+	color: black;
+	bottom: 60rpx;
+}
+
+.check_button_hover1 {
+	background-color: rgb(26, 96, 167);
+}
+
+.check_button_hover2 {
+	background-color: rgb(160, 164, 170);
+}

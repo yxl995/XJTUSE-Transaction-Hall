@@ -1,0 +1,18 @@
+<view class="box">
+	<picker-view indicator-class="selected_picker" style="width: 100%; height: 500rpx;border-radius: 20rpx;" value="{{value}}"
+		bindchange="bindChange">
+		<picker-view-column style="border-radius: 20rpx;">
+			<view wx:for="{{grades}}" wx:key="grades" style="line-height: 50px; text-align: center;border-radius: 20rpx;">{{item}}级
+			</view>
+		</picker-view-column>
+		<picker-view-column style="border-radius: 20rpx;">
+			<view wx:for="{{classes}}" wx:key="classes" style="line-height: 50px; text-align: center;border-radius: 20rpx;">软件{{item}}
+			</view>
+		</picker-view-column>
+		<picker-view-column style="border-radius: 20rpx;">
+			<view wx:for="{{names}}" wx:key="names" style="line-height: 50px; text-align: center;border-radius: 20rpx;">{{item}}</view>
+		</picker-view-column>
+	</picker-view>
+</view>
+<view class="selected_student">{{grade}}级 软件{{class}} {{name}}</view>
+<button bindtap="query" class="button" hover-class="button_hover" hover-stay-time="100">查询</button>

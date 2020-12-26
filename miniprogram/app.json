@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/blog/blog",
+    "pages/me/me",
+    "pages/applyRoom/applyRoom",
+    "pages/submitApply/submitApply",
+    "pages/submitApply1/submitApply1",
+    "pages/applyResult/applyResult",
+    "pages/applyRecord/applyRecord",
+    "pages/recordDetail/recordDetail",
+    "pages/registerAward/registerAward",
+    "pages/award/award",
+    "pages/queryStudent/queryStudent",
+    "pages/showStudent/showStudent",
+    "pages/news/news",
+    "pages/userInfo/userInfo",
+    "pages/commonQ&A/commonQ&A",
+    "pages/about/about"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarTitleText": "XJTUSE事务大厅",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#17abe3",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "主页",
+      "iconPath": "./images/index.png",
+      "selectedIconPath": "./images/index_checked.png"
+    }, {
+      "pagePath": "pages/me/me",
+      "text": "我的",
+      "iconPath": "./images/me.png",
+      "selectedIconPath": "./images/me_checked.png"
+    }]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

@@ -1,0 +1,10 @@
+<view class="img">
+  <image style=" width:100%" mode="widthFix" src="./images/logo.png">
+  </image>
+</view>
+
+<view class="box">
+  <view class="textbox">制作团队 ********</view>
+  <view class="textbox">联系方式 ********</view>
+  <view class="textbox">版本详情 ********</view>
+</view>

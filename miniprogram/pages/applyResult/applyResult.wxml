@@ -1,0 +1,14 @@
+<view class="body">
+	<view class="img">
+		<image mode="widthFix" wx:if="{{state=='fail'}}" src="./images/fail.png"></image>
+		<image mode="widthFix" wx:else src="./images/success.png"></image>
+	</view>
+	<view class="title">{{title}}</view>
+	<view class="fail" wx:if="{{state=='fail'}}">请返回申请界面重新申请!</view>
+	<view class="success" wx:else>
+		<view class="info">申请教室：{{dataList.room_num}}教室</view>
+		<view class="info">申请时间：{{dataList.date}} 星期{{dataList.weekDay}} {{dataList.start_time}}-{{dataList.end_time}}</view>
+		<view class="info" wx:for="{{dataList.boxList}}" wx:key="index">{{item.title}}：{{item.value}}</view>
+	</view>
+	<button bindtap="returnIndex" class="button" hover-class="button_hover" hover-stay-time="100">返回</button>
+</view>

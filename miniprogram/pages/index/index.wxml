@@ -1,0 +1,26 @@
+<view class="body">
+	<swiper indicator-dots indicator-color="#000" indicator-active-color="#fff" autoplay interval="4000" circular>
+		<swiper-item wx:for="{{swiper}}" wx:key="index" style="border-radius: 20rpx;">
+			<image style="width:100%" mode="widthFix" src="{{item}}"></image>
+		</swiper-item>
+	</swiper>
+	<view class="function">
+		<view bindtap="changePage" class="box" wx:for="{{function}}" wx:key="index" id="{{index}}">
+			<image mode="widthFix" src="{{item.icon}}" />
+			<view>{{item.name}}</view>
+		</view>
+	</view>
+	<view class="news_list">
+		<view class="title">
+			<view class="blue_block"></view>
+			学院通知
+		</view>
+		<view class="box" wx:for="{{newsList}}" wx:key="index">
+			<view class="dot"></view>
+			<view class="box">
+				<navigator url="../news/news?index={{index}}" style="font-size:35rpx">{{item.pre_title}}</navigator>
+				<view style="color:gray">{{item.date}}</view>
+			</view>
+		</view>
+	</view>
+</view>

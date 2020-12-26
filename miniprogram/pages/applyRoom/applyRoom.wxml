@@ -1,0 +1,26 @@
+<view class="body">
+	<view wx:for="{{boxList}}" wx:key="index" bindtap="{{item.tip}}" hover-class="box_hover" hover-stay-time="100"
+		class="box">
+		<view class="img">
+			<image mode="widthFix" src="{{item.img}}" />
+		</view>
+		<view class="text">
+			<view class="chinese">{{item.text_chinese}}</view>
+			<view class="english">{{item.text_english}}</view>
+		</view>
+		<view class="arrow">></view>
+	</view>
+
+	<view bindtap="hideTip" class="{{isShadow}}"></view>
+	<view class="{{tip_out}}">
+		<scroll-view class="tip_area" scroll-y="true">
+			<view class="tip_box">
+				<view class="tip_title">教室资源申请注意事项</view>
+				<view class="tip_text">{{tip_text}}</view>
+			</view>
+		</scroll-view>
+		<view bindtap="submitApply" hover-class="check_button_hover1" hover-stay-time="100" class="check_button1">
+			我已阅读注意事项，开始申请</view>
+		<view bindtap="hideTip" hover-class="check_button_hover2" hover-stay-time="100" class="check_button2">取消</view>
+	</view>
+</view>

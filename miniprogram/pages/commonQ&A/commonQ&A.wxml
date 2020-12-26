@@ -1,0 +1,24 @@
+<view class="img">
+  <image style="width:100%" src="./images/logo.png" mode="widthFix">
+  </image>
+</view>
+
+<view class="box">
+  <view wx:for="{{QNA}}" wx:key="index" class="question" id="{{index}}" bindtap="showAnswer" hover-class="question_hover"
+    hover-stay-time="100">
+    <view class="text">{{item.Q}}</view>
+    <view class="arrow">
+      <image style="width:100%" src="./images/arrow.png" mode="widthFix"></image>
+    </view>
+  </view>
+</view>
+<view class="mask" bindtap="hideAnswer" wx:if="{{isShow}}"></view>
+<view class="answerbox" wx:if="{{isShow}}">
+  <scroll-view class="tip_area" scroll-y="true">
+    <view class="tip_box">
+      <view class="tip_title">{{QNA[i].Q}}</view>
+      <view class="tip_text">{{QNA[i].A}}</view>
+    </view>
+  </scroll-view>
+  <view class="close" hover-class="close_hover" hover-stay-time="100" bindtap="hideAnswer">╳</view>
+</view>

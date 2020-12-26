@@ -1,0 +1,81 @@
+page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40rpx;
+}
+
+.userimage {
+  width: 100%;
+  display: flex;
+  border-radius: 100rpx;
+  position: relative;
+  box-shadow: 5rpx 5rpx 10rpx 1rpx #cccccc;
+}
+
+.shadow {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0;
+  border-radius: 100rpx;
+}
+
+.username {
+  width: 100%;
+  text-align: center;
+  font-size: 40rpx;
+  margin: 20rpx;
+}
+
+.box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20rpx;
+}
+
+.button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 30rpx;
+  font-size: 34rpx;
+}
+
+.txt {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  margin: 20rpx 0;
+}
+
+.icon {
+  width: 16%;
+  display: flex;
+  align-items: center;
+  margin: 0 30rpx;
+}
+
+.arrow {
+  width: 3%;
+  display: flex;
+  align-items: center;
+}
+
+.shadow_hover {
+  opacity: 0.3;
+}
